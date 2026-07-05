@@ -219,17 +219,21 @@
 
 这与之前测试服上 Swoop / ML named 类型怪物的 Paragon 状态验证有关。
 
-### Discordance 与宠物训练
+### Despise Discordance 生物与宠物训练
 
-修改文件:
+相关文件:
 
 - `Scripts/Skills/Discordance.cs`
 - `Scripts/Mobiles/Normal/BaseCreature.cs`
+- `Scripts/Mobiles/Normal/DespiseGoodCreatures.cs`
+- `Scripts/Mobiles/Normal/DespiseEvilCreatures.cs`
 
 变化:
 
-- `CanDiscord` 的训练宠物使用 Discordance 时，不再强制走普通玩家 Musicianship 检查。
+- Despise 中带 `MagicalAbility.Discordance` 的生物，例如 `Silenii` 和 `Phantom`，现在可以更可靠地执行 Discordance。
+- `CanDiscord` 的 BaseCreature 使用 Discordance 时，不再强制走普通玩家 Musicianship 检查。
 - `BaseCreature.CheckInstrument` 在需要 bard 技能但没有背包时，会自动补一个背包并放入不可移动的 exceptional harp。
+- 这避免了 Despise 阵营怪或训练宠物因为没有玩家式背包/乐器流程而无法稳定释放 Discordance。
 
 ### 其他小调整
 
