@@ -25,6 +25,8 @@
 - `Scripts/Custom/AdventureParty/AdventurePartyMonitor.cs`
 - `Scripts/Custom/AdventureParty/CHANGELOG.zh-CN.md`
 
+GM 命令的详细用途见 [NPC_PARTY_COMMANDS.md](NPC_PARTY_COMMANDS.md)。
+
 主要能力:
 
 - 生成由战士、弓手、法师、治疗者组成的小队。
