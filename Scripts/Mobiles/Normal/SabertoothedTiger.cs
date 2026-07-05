@@ -3,7 +3,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a saber-toothed tiger corpse")]
+    [CorpseName("a sabre-toothed tiger corpse")]
     public class SabertoothedTiger : BaseCreature
     {
         public override double HealChance { get { return .167; } }
@@ -12,7 +12,7 @@ namespace Server.Mobiles
         public SabertoothedTiger()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "saber-toothed tiger";
+            Name = "a sabre-toothed tiger";
             Body = 0x588;
             Female = true;
 
