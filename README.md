@@ -1,5 +1,7 @@
 # [ServUO]
 
+本仓库基于官方 ServUO 57.3。分支用途和测试服相对原版的更新说明见 [TEST_SERVER_CHANGES.md](TEST_SERVER_CHANGES.md)。
+
 [![Build Status](https://travis-ci.com/ServUO/ServUO.svg?branch=master)](https://travis-ci.com/ServUO/ServUO)
 [![GitHub issues](https://img.shields.io/github/issues/servuo/servuo.svg)](https://github.com/ServUO/ServUO/issues)
 [![GitHub release](https://img.shields.io/github/release/servuo/servuo.svg)](https://github.com/ServUO/ServUO/releases)
