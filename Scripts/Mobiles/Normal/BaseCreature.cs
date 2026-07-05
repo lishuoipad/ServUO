@@ -7160,7 +7160,14 @@ namespace Server.Mobiles
             if (inst == null)
             {
                 if (Backpack == null)
-                    return null;
+                {
+                    if (!CanDiscord && !CanPeace && !CanProvoke)
+                    {
+                        return null;
+                    }
+
+                    AddItem(new Backpack());
+                }
 
                 inst = Backpack.FindItemByType(typeof(BaseInstrument)) as BaseInstrument;
 

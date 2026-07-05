@@ -126,6 +126,7 @@ namespace Server.Items
         [Constructable]
 		public DespicableQuiver() : base(0x2B02)
 		{
+			LootType = LootType.Blessed;
 			Hue = 2671;
 			
 			DamageIncrease = 10;
@@ -180,6 +181,7 @@ namespace Server.Items
         [Constructable]
 		public UnforgivenVeil()
 		{
+			LootType = LootType.Blessed;
 			Hue = 2671;
 			
 			Attributes.BonusDex = 5;
@@ -227,6 +229,7 @@ namespace Server.Items
 		{
 			Hue = 2714; 
 			
+			Slayer = SlayerGroup.RandomSuperSlayerAOS();
 			WeaponAttributes.HitLightning = 15;
 			WeaponAttributes.HitColdArea = 100;
 			WeaponAttributes.HitLeechMana = 30;
@@ -263,6 +266,7 @@ namespace Server.Items
 		{
 			Hue = 2714;
 			
+			Slayer = SlayerGroup.RandomSuperSlayerAOS();
 			WeaponAttributes.HitLightning = 15;
 			WeaponAttributes.HitColdArea = 100;
 			WeaponAttributes.HitLeechMana = 30;

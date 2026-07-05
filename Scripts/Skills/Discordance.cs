@@ -172,6 +172,8 @@ namespace Server.SkillHandlers
 						double diff = m_Instrument.GetDifficultyFor(targ) - 10.0;
 						double music = from.Skills[SkillName.Musicianship].Value;
 
+                        bool petTrainingDiscordance = from is BaseCreature && ((BaseCreature)from).CanDiscord;
+
                         if (from is BaseCreature)
                             music = 120.0;
 
@@ -192,7 +194,7 @@ namespace Server.SkillHandlers
                             diff -= (diff * ((double)masteryBonus / 100));
                         }
 
-						if (!BaseInstrument.CheckMusicianship(from))
+						if (!petTrainingDiscordance && !BaseInstrument.CheckMusicianship(from))
 						{
 							from.SendLocalizedMessage(500612); // You play poorly, and there is no effect.
 							m_Instrument.PlayInstrumentBadly(from);
